@@ -7,13 +7,16 @@ body{
 
 .heading{
     font-size: 24px;
-    margin-left: 50px;
-    margin-top: 40px;
+}
+.section1{
+    margin-left: 100px;
+    margin-right: 120px;
 }
 
 header{
     display: flex;
-    
+    margin-left: 100px;
+    margin-right: 100px;
 }
 ul{
     list-style: none;
@@ -61,7 +64,7 @@ border: 1px solid black;
     font-size: 16px;
     color: black;
     background-color: #E02C6D;
-    padding-inline-end: 10px;
+    
     height: 44px;
     width: 196px;
     border-radius: 20px;
@@ -70,9 +73,9 @@ border: 1px solid black;
 .logo-images{
     width: 1110px;
     height: 110px;
-    margin-left: 50px;
+    margin-left: 100px;
     padding: 10px;
- 
+ margin-right: 120px;
   border: 2px outset black;
 }
 .loogo-img{
@@ -88,23 +91,51 @@ border: 1px solid black;
     justify-content: center;
     align-items: center;
 }
+.product-info{
+    margin: 10px;
+}
 .section2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
-    margin-left: 50px;
-   
+    margin-left: 200px;
+   margin-right: 200px;
 }
 .products{
     width: 329px;
     height: 476px;
-  
+  background-color: rgb(241, 205, 205);
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+ border-radius: 5px;
 }
 .rating{
     display: flex;
 
 }
+h6{
+   text-align: right;
+    color: #E02C6D;
+    justify-content: right;
+   
+}
 .fa-star{
     color: #FB8200;
+}
+footer{
+    text-align: center;
+    height:150px;
+    width: 100%;
+    background-color:darkgoldenrod;
+    color: white;
+    justify-content: center;
+}
+.footer-heading{
+    font-size: 24px;
+}
+.footer-link{
+    padding-left: 20px;
+    color: black;
 }
 
