@@ -7,7 +7,7 @@ body{
 
 .heading{
     font-size: 24px;
-
+}
 
     .header{
         display:flex;
@@ -35,7 +35,16 @@ nav{
 
 }
 <!------end header----->
-
+.section1{
+    margin-left: 100px;
+    margin-right: 120px;
+    background-image: url(images/Circle\ design.svg);
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.section1{
+    display:flex ;
+}
 .container{
 width: 582px;
 height: 270px;
@@ -46,6 +55,20 @@ border: 1px solid black;
 .heading2{
     font-size: 52px;
 }
+.link1{
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: #E02C6D;
+    
+    height: 44px;
+    width: 196px;
+    border-radius: 20px;
+   padding: 10px;
+}
+
+
 .main-img{
     width: 440px;
     height: 414px;
@@ -53,13 +76,7 @@ border: 1px solid black;
     margin-top: 50px;
 }
 
-.section1{
-    margin-left: 100px;
-    margin-right: 120px;
-    background-image: url(images/Circle\ design.svg);
-   background-repeat: no-repeat;
-   background-position: right;
-}
+
 .main-img:hover{
     transform:scale(0.75) rotate(360deg) translate(100px);
     animation:transform 10s 5 1s  ;
@@ -77,22 +94,7 @@ left: 0;
     right: 100px;
     }
 }
-.section1{
-    display:flex ;
-}
 
-.link1{
-    text-decoration: none;
-    padding-right: 10px;
-    font-size: 16px;
-    color: black;
-    background-color: #E02C6D;
-    
-    height: 44px;
-    width: 196px;
-    border-radius: 20px;
-   padding: 10px;
-}
 .logo-images{
     width: 1110px;
     height: 110px;
@@ -107,6 +109,15 @@ left: 0;
 .heading3{
     margin-left: 588px;
 }
+
+.section2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-left: 200px;
+   margin-right: 200px;
+}
+
 .product-img{
     width: 300;
     height: 256px;
@@ -117,13 +128,7 @@ left: 0;
 .product-info{
     margin: 10px;
 }
-.section2{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
-    margin-left: 200px;
-   margin-right: 200px;
-}
+
 .products{
     width: 329px;
     height: 476px;
@@ -137,15 +142,16 @@ left: 0;
     display: flex;
 
 }
+.fa-star{
+    color: #FB8200;
+}
 h6{
    text-align: right;
     color: #E02C6D;
     justify-content: right;
    
 }
-.fa-star{
-    color: #FB8200;
-}
+
 footer{
     text-align: center;
     height:150px;
