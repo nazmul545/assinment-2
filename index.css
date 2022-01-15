@@ -75,8 +75,36 @@ border: 1px solid black;
  
   border: 2px outset black;
 }
-.logo-img{
-  padding-right: 10px;
+.loogo-img{
+  padding-right:30px;
 }
+.heading3{
+    margin-left: 588px;
+}
+.product-img{
+    width: 300;
+    height: 256px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-left: 50px;
+   
+}
+.products{
+    width: 329px;
+    height: 476px;
+  
+}
+.rating{
+    display: flex;
 
+}
+.fa-star{
+    color: #FB8200;
+}
 
