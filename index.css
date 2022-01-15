@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+    align-items: center;
 }
 
 
@@ -14,6 +15,7 @@ body{
         display:flex;
         margin-left: 100px;
         margin-right:100px;
+        align-items: center;
     }
 ul{
     list-style: none;
@@ -45,13 +47,14 @@ nav{
 }
 .section1{
     display:flex ;
+    flex-wrap: wrap;
 }
 .container{
 width: 582px;
 height: 270px;
 margin-left: 50px;
 margin-top: 120px;
-border: 1px solid black;
+
 }
 .heading2{
     font-size: 52px;
@@ -78,46 +81,36 @@ border: 1px solid black;
 }
 
 
-.main-img:hover{
-    transform:scale(0.75) rotate(360deg) translate(100px);
-    animation:transform 10s 5 1s  ;
-}
-@keyframes transform{
-    0%{
-left: 0;
-    }
-    50%{
-    left: 50px;
-    right:50px;
-    }
-    100%{
-    left:100px;
-    right: 100px;
-    }
-}
+
+
+
 
 .logo-images{
     width: 1110px;
-    height: 110px;
+    height: 80px;
     margin-left: 100px;
     padding: 10px;
  margin-right: 120px;
-  border: 2px outset black;
+  border-top:  1px solid black;
+  border-bottom:  1px solid black;
+  flex-wrap: wrap;
 }
+
 .loogo-img{
   padding-right:30px;
 }
 .heading3{
-    margin-left: 588px;
+    text-align: center;
 }
 
 .section2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
-    margin-left: 200px;
+    margin-left: 100px;
    margin-right: 200px;
    flex-wrap: wrap;
+   row-gap: 50px;
 }
 
 
@@ -142,11 +135,7 @@ left: 0;
  border-radius: 5px;
  
 }
-@media (max-width:700px) {
-    .section2{
-        flex-direction: column;
-    }
-}
+
 .rating{
     display: flex;
 
@@ -176,3 +165,47 @@ footer{
     color: black;
 }
 
+
+@media only screen and (max-width: 680px) {
+    body {
+      width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .container{
+        width: 70%;
+        order: 2;
+        margin-bottom:50px;
+    }
+    .camera{
+        height: 256px;
+        width: 256px;
+        order: 1;
+        margin-right: 150px;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+    .logo-images{
+        display:none;
+        
+    }
+    .heading3{
+        margin-top: 30px;
+
+    }
+    .section2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (mae-width:992px) {
+  .section2{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }  
+}
+    
