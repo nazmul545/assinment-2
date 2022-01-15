@@ -7,17 +7,13 @@ body{
 
 .heading{
     font-size: 24px;
-}
-.section1{
-    margin-left: 100px;
-    margin-right: 120px;
-}
 
-header{
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
+    .header{
+        display:flex;
+        margin-left: 100px;
+        margin-right:100px;
+    }
 ul{
     list-style: none;
     display: flex;
@@ -39,9 +35,7 @@ nav{
 
 }
 <!------end header----->
-.heading2{
-    font-size: 52px;
-}
+
 .container{
 width: 582px;
 height: 270px;
@@ -49,8 +43,8 @@ margin-left: 50px;
 margin-top: 120px;
 border: 1px solid black;
 }
-.section1{
-    display:flex ;
+.heading2{
+    font-size: 52px;
 }
 .main-img{
     width: 440px;
@@ -58,6 +52,35 @@ border: 1px solid black;
     padding-left: 150px;
     margin-top: 50px;
 }
+
+.section1{
+    margin-left: 100px;
+    margin-right: 120px;
+    background-image: url(images/Circle\ design.svg);
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.main-img:hover{
+    transform:scale(0.75) rotate(360deg) translate(100px);
+    animation:transform 10s 5 1s  ;
+}
+@keyframes transform{
+    0%{
+left: 0;
+    }
+    50%{
+    left: 50px;
+    right:50px;
+    }
+    100%{
+    left:100px;
+    right: 100px;
+    }
+}
+.section1{
+    display:flex ;
+}
+
 .link1{
     text-decoration: none;
     padding-right: 10px;
